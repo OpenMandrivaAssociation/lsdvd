@@ -13,6 +13,7 @@ Patch2:		%{name}-0.16-ocode.patch
 URL:		http://untrepid.com/lsdvd/
 License:	GPL
 Group:		Video
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	libdvdread-devel >= 0.9.4
 
 %description
