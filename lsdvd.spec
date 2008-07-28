@@ -1,6 +1,6 @@
 %define name	lsdvd
 %define version	0.16
-%define release %mkrel 3
+%define release %mkrel 5
 
 Name: 	 	%{name}
 Summary: 	Reads and prints the contents of a dvd in plain English
