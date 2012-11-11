@@ -1,0 +1,12 @@
+--- configure.orig	2006-06-28 10:25:01.000000000 +0200
++++ configure	2006-06-28 10:25:31.000000000 +0200
+@@ -2887,8 +2887,8 @@
+ cat confdefs.h >>conftest.$ac_ext
+ cat >>conftest.$ac_ext <<_ACEOF
+ /* end confdefs.h.  */
++#include <stdint.h>
+ #include <dvdread/ifo_read.h>
+-		#include <stdint.h>
+ int
+ main ()
+ {
