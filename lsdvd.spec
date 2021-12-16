@@ -1,7 +1,7 @@
 Name:		lsdvd
 Summary:	Reads and prints the contents of a dvd in plain English
-Version:	0.16
-Release:	11
+Version:	0.17
+Release:	1
 Source:		http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-0.16-configure.patch
 Patch1:		%{name}-0.16-include-order.patch
@@ -26,16 +26,12 @@ reading library for *nix.
 %patch3 -p0
 
 %build
-%configure2_5x
+%configure
 
-%make
+%make_build
 
 %install
-rm -rf %{buildroot}
-%makeinstall_std
-
-%clean
-rm -rf %{buildroot}
+%make_install
 
 %files
 %defattr(644,root,root,755)
