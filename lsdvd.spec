@@ -27,7 +27,7 @@ reading library for *nix.
 
 %files
 %defattr(644,root,root,755)
-%doc README AUTHORS COPYING NEWS
+%doc README AUTHORS COPYING
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.*
 
