@@ -3,10 +3,6 @@ Summary:	Reads and prints the contents of a dvd in plain English
 Version:	0.17
 Release:	1
 Source:		https://sourceforge.net/projects/lsdvd/files/lsdvd/lsdvd-%{version}.tar.gz
-Patch0:		%{name}-0.16-configure.patch
-Patch1:		%{name}-0.16-include-order.patch
-Patch2:		%{name}-0.16-ocode.patch
-Patch3:		%{name}-0.16-fix-string-format.patch
 URL:		http://untrepid.com/lsdvd/
 License:	GPLv2
 Group:		Video
@@ -20,10 +16,6 @@ reading library for *nix.
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p0
-%patch2 -p0
-%patch3 -p0
 
 %build
 %configure
