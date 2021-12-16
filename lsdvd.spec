@@ -2,7 +2,7 @@ Name:		lsdvd
 Summary:	Reads and prints the contents of a dvd in plain English
 Version:	0.17
 Release:	1
-Source:		http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source:		https://sourceforge.net/projects/lsdvd/files/lsdvd/lsdvd-%{version}.tar.gz
 Patch0:		%{name}-0.16-configure.patch
 Patch1:		%{name}-0.16-include-order.patch
 Patch2:		%{name}-0.16-ocode.patch
