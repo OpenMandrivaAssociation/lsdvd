@@ -1,12 +1,8 @@
 Name:		lsdvd
 Summary:	Reads and prints the contents of a dvd in plain English
-Version:	0.16
-Release:	11
-Source:		http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-Patch0:		%{name}-0.16-configure.patch
-Patch1:		%{name}-0.16-include-order.patch
-Patch2:		%{name}-0.16-ocode.patch
-Patch3:		%{name}-0.16-fix-string-format.patch
+Version:	0.17
+Release:	1
+Source:		https://sourceforge.net/projects/lsdvd/files/lsdvd/lsdvd-%{version}.tar.gz
 URL:		http://untrepid.com/lsdvd/
 License:	GPLv2
 Group:		Video
@@ -20,26 +16,18 @@ reading library for *nix.
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p0
-%patch2 -p0
-%patch3 -p0
 
 %build
-%configure2_5x
+%configure
 
-%make
+%make_build
 
 %install
-rm -rf %{buildroot}
-%makeinstall_std
-
-%clean
-rm -rf %{buildroot}
+%make_install
 
 %files
 %defattr(644,root,root,755)
-%doc README AUTHORS COPYING NEWS
+%doc README AUTHORS COPYING
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.*
 
