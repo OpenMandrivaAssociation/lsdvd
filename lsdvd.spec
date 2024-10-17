@@ -3,7 +3,7 @@ Summary:	Reads and prints the contents of a dvd in plain English
 Version:	0.17
 Release:	1
 Source:		https://sourceforge.net/projects/lsdvd/files/lsdvd/lsdvd-%{version}.tar.gz
-URL:		http://untrepid.com/lsdvd/
+URL:		https://untrepid.com/lsdvd/
 License:	GPLv2
 Group:		Video
 BuildRoot:	%{_tmppath}/%{name}-buildroot
