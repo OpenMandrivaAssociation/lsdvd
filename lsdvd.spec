@@ -7,6 +7,11 @@ URL:		https://untrepid.com/lsdvd/
 License:	GPLv2
 Group:		Video
 BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libdvdread-devel >= 0.9.4
 
 %description
